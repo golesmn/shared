@@ -9,5 +9,5 @@ class BaseRepository(ABC, Generic[T]):
         pass
 
     @abstractmethod
-    def find_by_id(self, id: str) -> Optional[T]:
+    def get_by_id(self, id: str) -> Optional[T]:
         pass

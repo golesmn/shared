@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from datetime import datetime
 import uuid
 
@@ -13,3 +13,6 @@ class Event:
             self.event_id = str(uuid.uuid4())
         if not self.timestamp:
             self.timestamp = datetime.now()
+    
+    def asdict(self):
+        return {k: str(v) for k, v in asdict(self).items()}

@@ -3,13 +3,14 @@ from abc import ABC, abstractmethod
 from .event import Event
 
 
-class EventDispatcher(ABC):
-    """Responsible for dispatching Event objects on the boundaries
-    of Domain and Application layer.
-    """
+class EventDispatcher:
+    handlers = {}
 
-    @abstractmethod
-    def add(self, *events: Event) -> None: ...
+    @classmethod
+    def register(cls, event_type, handler):
+        cls.handlers.setdefault(event_type, []).append(handler)
 
-    @abstractmethod
-    def dispatch_all(self) -> None: ...
+    @classmethod
+    def dispatch(cls, event):
+        for handler in cls.handlers.get(type(event), []):
+            handler(event)
