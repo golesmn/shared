@@ -1,6 +1,6 @@
-from abc import abstractmethod, ABC
+from abc import ABC, abstractmethod
 
-from shared.abstractions.events.event_handler import TEvent, EventHandler
+from shared.abstractions.events.event_handler import EventHandler, TEvent
 
 
 class EventHandlerRegistry(ABC):

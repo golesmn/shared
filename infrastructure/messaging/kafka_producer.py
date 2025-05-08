@@ -1,21 +1,20 @@
 import json
 import logging
 
-from access_management.repositories.user_repository import UserRepository
-from kafka import KafkaProducer
 from flask import request
+from kafka import KafkaProducer
 
 from access_management.application.services.user_service import UserService
 from access_management.domain.aggregates.user import User
+from access_management.repositories.user_repository import UserRepository
 from shared.abstractions.events.event import Event
 from shared.infrastructure.db.db import SessionLocal
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-KAKFA_TOPICS_MAP = {
-    "UserCreated" : "request-topic"
-}
+KAKFA_TOPICS_MAP = {"UserCreated": "request-topic"}
+
 
 class KafkaEventDispatcher:
     def __init__(self, bootstrap_servers: str):

@@ -1,12 +1,12 @@
+from typing import Generic, Optional, Type, TypeVar
 
-
-
-from sqlalchemy.orm import Session
 from sqlalchemy import select
+from sqlalchemy.orm import Session
+
 from .base_repository import BaseRepository
-from typing import TypeVar, Generic, Optional, Type
 
 T = TypeVar("T")
+
 
 class SQLAlchemyRepository(BaseRepository[T], Generic[T]):
     def __init__(self, session: Session, model: Type[T]):
