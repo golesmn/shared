@@ -23,7 +23,7 @@ class KafkaEventDispatcher(EventDispatcher):
     def dispatch(self, event: Event):
         topic = self._get_topic_for_event(event)
         payload = self._serialize_event(event)
-        self.producer.send(topic=topic, value=payload, key="access_management".encode())
+        self.producer.send(topic=topic, value=payload)
         self.producer.flush()
 
     def _get_topic_for_event(self, event: Event) -> str:
