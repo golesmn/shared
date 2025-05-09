@@ -1,3 +1,4 @@
+from typing import Optional
 import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime
@@ -5,9 +6,9 @@ from datetime import datetime
 
 @dataclass
 class Event:
-    event_id: str
+    event_id: Optional[str]
     event_type: str
-    timestamp: datetime
+    timestamp: Optional[datetime]
 
     def __post_init__(self):
         if not self.event_id:
