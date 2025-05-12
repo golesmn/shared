@@ -7,8 +7,6 @@ from sqlalchemy.orm import sessionmaker
 from shared.infrastructure.settings import db_settings
 from shared.utils.db.get_connection_url import get_db_connection_url
 
-
-
 DATABASE_URL = get_db_connection_url()
 
 
