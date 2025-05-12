@@ -18,6 +18,7 @@ To get started with running the code locally, please refer to the following guid
 - [Running the Code Locally](./docs/running_locally.md)
 - [Installation Guide](./docs/installation.md)
 - [System Architecture](./docs/architecture.md)
+- [Adding New Resources](./docs/adding_new_resources.md)
 
 These documents provide step-by-step instructions for setting up the environment, installing dependencies, and understanding the architecture.
 

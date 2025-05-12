@@ -231,22 +231,12 @@ EOF
 
 * **Fission Documentation**: [https://fission.io/docs/](https://fission.io/docs/)
 
-* **Fission GitHub Repository**: [https://github.com/fission/fission](https://github.com/fission/fission)([Medium][4])
+* **Fission GitHub Repository**: [https://github.com/fission/fission](https://github.com/fission/fission)
 
-* **Fission Helm Charts**: [https://artifacthub.io/packages/helm/fission-charts/fission-all](https://artifacthub.io/packages/helm/fission-charts/fission-all)([Artifact Hub][9])
-
----
-
-This setup provides a local environment to develop and test serverless functions using Fission on Kubernetes. For production deployments, consider using a managed Kubernetes service and follow best practices for scalability and security.([Medium][4])
+* **Fission Helm Charts**: [https://artifacthub.io/packages/helm/fission-charts/fission-all](https://artifacthub.io/packages/helm/fission-charts/fission-all)
 
 ---
 
-[1]: https://kubernetes.io/blog/2016/10/helm-charts-making-it-simple-to-package-and-deploy-apps-on-kubernetes/?utm_source=chatgpt.com "Helm Charts: making it simple to package and deploy ... - Kubernetes"
-[2]: https://kind.sigs.k8s.io/docs/user/quick-start/?utm_source=chatgpt.com "Quick Start - kind - Kubernetes"
-[3]: https://gitlab.unimelb.edu.au/feit-comp90024/comp90024/-/blob/master/installation/README.md?utm_source=chatgpt.com "installation/README.md · master · COMP90024 ... - GitLab"
-[4]: https://medium.com/%40mr.gmanojkumar/deploying-and-running-python-functions-with-fission-on-kubernetes-47129a81761a?utm_source=chatgpt.com "Deploying and Running Python Functions with Fission on Kubernetes"
-[5]: https://github.com/fluxcd/flux2/discussions/1783?utm_source=chatgpt.com "Cannot install fission helm using flux · fluxcd flux2 · Discussion #1783"
-[6]: https://fission.io/docs/installation/?utm_source=chatgpt.com "Installing Fission"
-[7]: https://kubernetes.io/blog/2017/01/fission-serverless-functions-as-service-for-kubernetes/?utm_source=chatgpt.com "Fission: Serverless Functions as a Service for Kubernetes"
-[8]: https://github.com/fission/fission-workflows/blob/master/INSTALL.md?utm_source=chatgpt.com "fission-workflows/INSTALL.md at master - GitHub"
-[9]: https://artifacthub.io/packages/helm/fission-charts/fission-all?utm_source=chatgpt.com "fission-all - Helm chart - Artifact Hub"
+This setup provides a local environment to develop and test serverless functions using Fission on Kubernetes. For production deployments, consider using a managed Kubernetes service and follow best practices for scalability and security.
+
+---

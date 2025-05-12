@@ -20,9 +20,7 @@
     fission function test --name <function-name> -v=2
     ```
 
-    ***Note***: If you want to test the function with payload and different http method then you need to pass --method and --body flags.
-
-    Refer to the `fission function test` document [here](https://fission.io/docs/reference/fission-cli/fission_function_test/).
+    > ***Note***: If you want to test the function with payload and different http method then you need to pass --method and --body flags.Refer to the `fission function test` document [here](https://fission.io/docs/reference/fission-cli/fission_function_test/).
 
 4. To check the fission function logs
 
