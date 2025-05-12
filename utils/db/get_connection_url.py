@@ -11,7 +11,7 @@ ENGINE_STRATEGIES = {
 
 
 def get_db_connection_url() -> str:
-    engine = db_settings.DB_ENGINE.lowe()
+    engine = db_settings.DB_ENGINE.lower()
     builder = ENGINE_STRATEGIES.get(engine)
     if not builder:
         raise ValueError(f"Unsupported DB_ENGINE: {engine}")
