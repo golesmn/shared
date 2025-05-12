@@ -1,7 +1,7 @@
-from typing import Optional
 import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime
+from typing import Optional
 
 
 @dataclass

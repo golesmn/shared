@@ -5,7 +5,6 @@ from shared.abstractions.events.event import Event
 
 
 class AggregateRoot(ABC):
-
     _events: List[Event] = []
 
     def add_event(self, event: Event):

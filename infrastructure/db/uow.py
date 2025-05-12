@@ -1,5 +1,6 @@
 # uow.py
 from typing import Iterable
+
 from shared.abstractions.events.event_dispatcher import EventDispatcher
 from shared.abstractions.primitives.aggregate import AggregateRoot
 
@@ -7,7 +8,7 @@ from shared.abstractions.primitives.aggregate import AggregateRoot
 class UnitOfWork:
     def __init__(self, session_factory, dispatcher: EventDispatcher):
         self.session = session_factory()
-        self._aggregates:Iterable[AggregateRoot] = set()
+        self._aggregates: Iterable[AggregateRoot] = set()
         self._dispatcher = dispatcher
 
     def register(self, aggregate: AggregateRoot):

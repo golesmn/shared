@@ -1,6 +1,8 @@
-from shared.infrastructure.settings import db_settings
 from shared.infrastructure.db.connection.mysql_connection_builder import MySQLURLBuilder
-from shared.infrastructure.db.connection.postgres_connection_builder import PostgresURLBuilder
+from shared.infrastructure.db.connection.postgres_connection_builder import (
+    PostgresURLBuilder,
+)
+from shared.infrastructure.settings import db_settings
 
 ENGINE_STRATEGIES = {
     "postgresql": PostgresURLBuilder(),

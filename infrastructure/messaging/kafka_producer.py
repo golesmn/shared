@@ -1,6 +1,6 @@
-from functools import lru_cache
 import json
 import logging
+from functools import lru_cache
 
 from kafka import KafkaProducer
 
@@ -10,7 +10,7 @@ from shared.abstractions.events.event_dispatcher import EventDispatcher
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-KAKFA_TOPICS_MAP = {"UserCreated": "request-topic", "ProductCreated" : "request-topic"}
+KAKFA_TOPICS_MAP = {"UserCreated": "request-topic", "ProductCreated": "request-topic"}
 
 
 class KafkaEventDispatcher(EventDispatcher):

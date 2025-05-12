@@ -1,7 +1,5 @@
 import os
 
-
-
 DB_USER = os.environ["DB_USER"]
 DB_HOST = os.environ["DB_HOST"]
 DB_PASSWORD = os.environ["DB_PASSWORD"]
