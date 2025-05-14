@@ -2,6 +2,19 @@
 
 1. Go the respective service that you want to run. For example: `<service-name>_service`
 
+2. Go to the `schema_manager` project and run  
+    ```bash
+    docker compose up -d 
+    ```
+    to run the db
+
+3. Expose the db network to the kind container. This should make the host accessible to fission functions
+
+    Run
+    ```bash
+    docker network connect kind event_driven_demo_db
+    ```
+
 2. Deploying to the local kind cluster
 
     ``` bash

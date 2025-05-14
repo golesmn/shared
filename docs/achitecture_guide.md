@@ -1,13 +1,13 @@
 
-# Access Management System
+# Architecture Guide
 
-This project follows **Domain-Driven Design (DDD)**, **Clean Architecture**, and **Event-Driven Design (EDD)** principles to structure an access management microservice. It is designed to be modular, testable, and highly scalable.
+All of the services use **Domain-Driven Design (DDD)**, **Clean Architecture**, and **Event-Driven Design (EDD)** principles to structure a service. It is designed to be modular, testable, and highly scalable.
 
 ---
 
 ## 📚 Table of Contents
 
-- [Project Structure](#project-structure)
+- [Sample Project Structure](#sample-project-structure)
 - [Architecture Overview](#architecture-overview)
   - [Domain-Driven Design (DDD)](#domain-driven-design-ddd)
   - [Clean Architecture](#clean-architecture)
@@ -18,7 +18,7 @@ This project follows **Domain-Driven Design (DDD)**, **Clean Architecture**, and
 
 ---
 
-## 📁 Project Structure
+## 📁 Sample Project Structure
 
 ```bash
 .
@@ -105,50 +105,23 @@ Use this pattern to:
 
 ---
 
-## 🚀 Getting Started
-
-1. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Run service**:
-
-   ```bash
-   python access_management/main.py
-   ```
-
-3. **Run tests** *(if available)*:
-
-   ```bash
-   pytest
-   ```
-
----
-
 ## 📘 Learning Resources
 
-### 📗 Domain-Driven Design
+## Books
+* [Architecture Patterns with Python](https://www.cosmicpython.com/book/preface.html)
 
-* [Domain-Driven Design Reference (Vaughn Vernon)](https://www.amazon.com/Domain-Driven-Design-Reference-Vaughn-Vernon/dp/0321834577)
+
+### Domain-Driven Design
+
 * [DDD Quickly (free ebook)](https://www.infoq.com/minibooks/domain-driven-design-quickly/)
-* [What is Domain-Driven Design? (Martin Fowler)](https://martinfowler.com/bliki/DomainDrivenDesign.html)
 
-### 📙 Clean Architecture
+### Clean Architecture
 
-* [Clean Architecture by Uncle Bob](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
 * [Clean Architecture explained](https://medium.com/swlh/clean-architecture-9f3bf34fdfdb)
 
-### 📘 Event-Driven Architecture
+### Event-Driven Architecture
 
 * [Event-Driven Architecture — Martin Fowler](https://martinfowler.com/articles/201701-event-driven.html)
 * [Introduction to Event-Driven Architecture](https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
-
----
-
-## ✨ Contributing
-
-See `shared/docs/adding_new_resources.md` for information on how to add new features, aggregates, or services to the project.
 
 ---

@@ -15,10 +15,11 @@ The repository includes:
 
 To get started with running the code locally, please refer to the following guides in the `docs/` directory:
 
-- [Running the Code Locally](./docs/running_locally.md)
 - [Installation Guide](./docs/installation.md)
+- [Running the Code Locally](./docs/running_locally.md)
 - [System Architecture](./docs/architecture.md)
 - [Adding New Resources](./docs/adding_new_resources.md)
+- [Architecture Resources](./docs/architecture_guide.md)
 
 These documents provide step-by-step instructions for setting up the environment, installing dependencies, and understanding the architecture.
 
